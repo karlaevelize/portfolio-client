@@ -6,6 +6,8 @@ class Toolbar extends Component {
     return (
       <div>
         <Link to="/login">Login</Link>
+        <br />
+        <Link to="signup">Sign Up</Link>
       </div>
     );
   }

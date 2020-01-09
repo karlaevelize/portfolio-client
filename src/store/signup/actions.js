@@ -15,9 +15,9 @@ export function signUp(name, email, password) {
   };
 }
 
-export function successSignUp(successToken) {
+export function successSignUp(data) {
   return {
     type: "sign_up/SUCCESS_SIGN_UP",
-    payload: successToken
+    payload: data
   };
 }
