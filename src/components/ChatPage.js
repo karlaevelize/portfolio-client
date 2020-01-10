@@ -45,6 +45,7 @@ class ChatPage extends Component {
         <b>{message.name} says:</b> {message.text}
       </p>
     ));
+
     return (
       <main className="form">
         <h2>Enjoy out chat platform, ask questions and interact with people</h2>
@@ -76,7 +77,8 @@ class ChatPage extends Component {
 
 function mapStateToProps(reduxState) {
   return {
-    chat: reduxState.chat
+    chat: reduxState.chat,
+    login: reduxState.login
   };
 }
 

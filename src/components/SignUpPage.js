@@ -28,6 +28,9 @@ class SignUp extends Component {
   };
 
   render() {
+    if (this.props.login.jwt !== null) {
+      return <h2 className="form">You already have an account!</h2>;
+    }
     return (
       <div className="form">
         <h1>Sign Up</h1>
@@ -73,7 +76,7 @@ class SignUp extends Component {
 
 function mapStateToProps(reduxState) {
   return {
-    signUp: reduxState.signUp
+    login: reduxState.login
   };
 }
 

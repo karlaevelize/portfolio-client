@@ -8,6 +8,8 @@ class Toolbar extends Component {
         <Link to="/login">Login</Link>
         <br />
         <Link to="signup">Sign Up</Link>
+        <br />
+        <Link to="chat">Chat</Link>
       </div>
     );
   }
